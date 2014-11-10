@@ -89,9 +89,15 @@ to your `.bashrc`, `.profile`, or `.bash_profile`, then logout and relogin:
 
 ### Step 2. Download litecoind
 
+<<<<<<< HEAD
 Older versions of Electrum used to require a patched version of litecoind. 
 This is not the case anymore since litecoind supports the 'txindex' option.
 We currently recommend litecoind 0.8.7.2 stable.
+=======
+Older versions of Electrum used to require a patched version of bitcoind. 
+This is not the case anymore since bitcoind supports the 'txindex' option.
+We currently recommend bitcoind 0.9.3 stable.
+>>>>>>> upstream/master
 
 If you prefer to compile litecoind, here are some pointers for Ubuntu:
 
