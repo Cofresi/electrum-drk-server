@@ -54,10 +54,10 @@ class BlockchainProcessor(Processor):
         self.dblock = threading.Lock()
 
         self.darkcoind_url = 'http://%s:%s@%s:%s/' % (
-            config.get('darkcoind', 'user'),
-            config.get('darkcoind', 'password'),
-            config.get('darkcoind', 'host'),
-            config.get('darkcoind', 'port'))
+            config.get('darkcoind', 'darkcoind_user'),
+            config.get('darkcoind', 'darkcoind_password'),
+            config.get('darkcoind', 'darkcoind_host'),
+            config.get('darkcoind', 'darkcoind_port'))
 
         self.sent_height = 0
         self.sent_header = None
