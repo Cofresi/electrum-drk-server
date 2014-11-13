@@ -20,5 +20,15 @@ params = {
         'pubkey_address': 111,
         'script_address': 196,
         'genesis_hash': 'f5ae71e26c74beacc88382716aced69cddf3dffff24f384e1808905e0188f68f'
+    },
+   'darkcoin_main': {
+        'pubkey_address': 76,
+        'script_address': 5,
+        'genesis_hash': '00000ffd590b1485b3caadc19b22e6379c733355108f107a430458cdf3407ab6'
+    },
+    'darkcoin_test': {
+        'pubkey_address': 111,
+        'script_address': 196,
+        'genesis_hash': '00000bafbc94add76cb75e2ec92894837288a481e5c005f6563d91623bf8bc2c'
     }
 }

@@ -26,7 +26,7 @@ __b58base = len(__b58chars)
 
 global PUBKEY_ADDRESS
 global SCRIPT_ADDRESS
-PUBKEY_ADDRESS = 48
+PUBKEY_ADDRESS = 76
 SCRIPT_ADDRESS = 5
 
 def rev_hex(s):
@@ -125,8 +125,8 @@ def hash_160_to_pubkey_address(h160):
 def hash_160_to_script_address(h160):
     return hash_160_to_address(h160, SCRIPT_ADDRESS)
 
-
-def hash_160_to_address(h160, addrtype = 48):
+#111=testnet 76=mainnet
+def hash_160_to_address(h160, addrtype = 76):
     """ Checks if the provided hash is actually 160bits or 20 bytes long and returns the address, else None
     """
     if h160 is None or len(h160) is not 20:
@@ -230,7 +230,7 @@ def timestr():
 import logging
 import logging.handlers
 
-logger = logging.getLogger('electrum-ltc')
+logger = logging.getLogger('electrum-drk')
 
 def init_logger(logfile):
     hdlr = logging.handlers.WatchedFileHandler(logfile)

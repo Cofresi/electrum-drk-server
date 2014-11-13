@@ -1,33 +1,33 @@
 from setuptools import setup
 
 setup(
-    name="electrum-ltc-server",
+    name="electrum-drk-server",
     version="0.9",
-    scripts=['run_electrum_ltc_server','electrum-ltc-server'],
+    scripts=['run_electrum_drk_server','electrum-drk-server'],
     install_requires=['plyvel','jsonrpclib', 'irc'],
     package_dir={
-        'electrumltcserver':'src'
+        'electrumdrkserver':'src'
         },
     py_modules=[
-        'electrumltcserver.__init__',
-        'electrumltcserver.utils',
-        'electrumltcserver.storage',
-        'electrumltcserver.deserialize',
-        'electrumltcserver.networks',
-        'electrumltcserver.blockchain_processor',
-        'electrumltcserver.server_processor',
-        'electrumltcserver.processor',
-        'electrumltcserver.version',
-        'electrumltcserver.ircthread',
-        'electrumltcserver.stratum_tcp',
-        'electrumltcserver.stratum_http'
+        'electrumdrkserver.__init__',
+        'electrumdrkserver.utils',
+        'electrumdrkserver.storage',
+        'electrumdrkserver.deserialize',
+        'electrumdrkserver.networks',
+        'electrumdrkserver.blockchain_processor',
+        'electrumdrkserver.server_processor',
+        'electrumdrkserver.processor',
+        'electrumdrkserver.version',
+        'electrumdrkserver.ircthread',
+        'electrumdrkserver.stratum_tcp',
+        'electrumdrkserver.stratum_http'
     ],
-    description="Litecoin Electrum Server",
+    description="Darkcoin Electrum Server",
     author="Thomas Voegtlin",
     author_email="thomasv1@gmx.de",
     license="GNU Affero GPLv3",
-    url="https://github.com/pooler/electrum-ltc-server/",
-    long_description="""Server for the Electrum Lightweight Litecoin Wallet"""
+    url="https://github.com/Cofresi/electrum-drk-server",
+    long_description="""Server for the Electrum Lightweight Darkcoin Wallet"""
 )
 
 
